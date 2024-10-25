@@ -60,5 +60,24 @@ namespace proyecto
 		
 		
 		}
+		
+		void BTNform1Click(object sender, EventArgs e)
+		{
+			DateTime fecha = DTPfecha.Value;
+			string RFC = fecha.ToString("yyMMdd");
+			string nombre = TXTnombre.Text;
+			string prim = nombre.Substring(0,1);
+			string apellido1 = TXTapellido1.Text;
+			string app1 = apellido1.Substring(0, 2);
+			string appellido2 = TXTapellido2.Text;
+			string app2 = appellido2.Substring(0,1);;
+			string nc=app1+app2+prim;
+			string nc2=nombre+" "+apellido1+" "+appellido2;
+			datos_del_usuario_y_RFC form = new datos_del_usuario_y_RFC();
+			datos_del_usuario_y_RFC.LBLcompleto.Text=nc2;
+			datos_del_usuario_y_RFC.LBLrfcnn.Text=nc.ToUpper()+fecha+"SF6";
+
+			form.Show();
+		}
 	}
 }

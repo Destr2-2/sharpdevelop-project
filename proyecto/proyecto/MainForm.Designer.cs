@@ -55,6 +55,7 @@ namespace proyecto
 			this.BTNcalcular = new System.Windows.Forms.Button();
 			this.label9 = new System.Windows.Forms.Label();
 			this.label10 = new System.Windows.Forms.Label();
+			this.BTNform1 = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -253,11 +254,22 @@ namespace proyecto
 			this.label10.TabIndex = 18;
 			this.label10.Text = "Escribir los apartados con mayuscula";
 			// 
+			// BTNform1
+			// 
+			this.BTNform1.Location = new System.Drawing.Point(651, 582);
+			this.BTNform1.Name = "BTNform1";
+			this.BTNform1.Size = new System.Drawing.Size(138, 71);
+			this.BTNform1.TabIndex = 19;
+			this.BTNform1.Text = "datos de \r\nusuario";
+			this.BTNform1.UseVisualStyleBackColor = true;
+			this.BTNform1.Click += new System.EventHandler(this.BTNform1Click);
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(801, 665);
+			this.Controls.Add(this.BTNform1);
 			this.Controls.Add(this.label10);
 			this.Controls.Add(this.label9);
 			this.Controls.Add(this.BTNcalcular);
@@ -279,22 +291,23 @@ namespace proyecto
 			this.Controls.Add(this.label1);
 			this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 			this.Name = "MainForm";
-			this.Text = "proyecto";
+			this.Text = "calculadora de RFC";
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Button BTNform1;
 		private System.Windows.Forms.Label label10;
 		private System.Windows.Forms.Label label9;
 		private System.Windows.Forms.Button BTNcalcular;
 		private System.Windows.Forms.Label LBLrfc;
 		private System.Windows.Forms.Label label8;
-		private System.Windows.Forms.DateTimePicker DTPfecha;
-		private System.Windows.Forms.ComboBox CBXsemest;
-		private System.Windows.Forms.TextBox TXTtelef;
-		private System.Windows.Forms.TextBox TXTdire;
-		private System.Windows.Forms.TextBox TXTapellido2;
-		private System.Windows.Forms.TextBox TXTapellido1;
-		private System.Windows.Forms.TextBox TXTnombre;
+		public System.Windows.Forms.DateTimePicker DTPfecha;
+		public System.Windows.Forms.ComboBox CBXsemest;
+		public System.Windows.Forms.TextBox TXTtelef;
+		public System.Windows.Forms.TextBox TXTdire;
+		public System.Windows.Forms.TextBox TXTapellido2;
+		public System.Windows.Forms.TextBox TXTapellido1;
+		public System.Windows.Forms.TextBox TXTnombre;
 		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.Label label5;
