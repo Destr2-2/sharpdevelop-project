@@ -30,8 +30,33 @@ namespace proyecto
 			//
 		}
 		
-	
 		
 		
+		
+		
+		
+		
+		
+		void BTNcalcularClick(object sender, EventArgs e)
+		{
+			
+			
+			DateTime fecha = DTPfecha.Value;
+			string RFC = fecha.ToString("yyMMdd");
+			
+			string nombre = TXTnombre.Text;
+			string prim = nombre.Substring(0,1);
+
+			
+			string apellido1 = TXTapellido1.Text;
+			string app1 = apellido1.Substring(0, 2);
+
+			
+			string appellido2 = TXTapellido2.Text;
+			string app2 = appellido2.Substring(0,1);
+			LBLrfc.Text = app1 + app2 + prim + RFC + "SF6";
+		
+		
+		}
 	}
 }
